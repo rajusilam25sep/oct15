@@ -22,7 +22,7 @@
     when: ansible_os_family== "RedHat"
 
   - name: in this tasks, i want to webservers on RedHat
-    serice:
+    service:
       name: httpd
       state: started
     when: ansible_os_family== "RedHat"
