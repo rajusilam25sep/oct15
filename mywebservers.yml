@@ -21,7 +21,7 @@
       state: present
     when: ansible_os_family== "RedHat"
 
-  - name: in this tasks, i want to start webservers on RedHat
+  - name: in this tasks, i want to webservers on RedHat
     serice:
       name: httpd
       state: started
