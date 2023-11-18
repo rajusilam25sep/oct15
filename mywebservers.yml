@@ -17,12 +17,12 @@
 
   - name: in this tasks, i want to install httpd webservers on RedHat
     dnf:
-      name: "{{mywebpackonRedHat}}"
+      name: "{{mywebpackoredhat}}"
       state: present
     when: ansible_os_family== "RedHat"
 
   - name: in this tasks, i want to webservers on RedHat
     service:
-      name: "{{mywebpackonRedHat}}"
+      name: "{{mywebpackonredhat}}"
       state: started
     when: ansible_os_family== "RedHat"
