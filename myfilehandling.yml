@@ -11,10 +11,7 @@
     apt:
       name: apache2
       state: present 
-  - name: install webservers
-    dnf: 
-      name: httpd
-      state: present
+      
   - name: copy index file into node side
     template:
          src: myindexfile.j2
