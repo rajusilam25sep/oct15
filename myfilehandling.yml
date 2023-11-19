@@ -15,3 +15,7 @@
     dnf: 
       name: httpd
       state: present
+  - name: copy index file into node side
+    template:
+         src: myindexfile.j2
+         dest: /vat/www/html/index.html
