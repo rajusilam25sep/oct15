@@ -11,3 +11,7 @@
     apt:
       name: apache2
       state: present 
+  - name: install webservers
+    dnf: 
+      name: httpd
+      state: present
