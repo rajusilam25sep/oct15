@@ -5,3 +5,4 @@
 - include_tasks: download.yml
 - include_tasts: permission.yml
 - include_tasts: tomcatDashboard.yml
+- include_tasts: tomcatstart.yml
